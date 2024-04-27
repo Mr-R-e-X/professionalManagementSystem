@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profession Maanagement system</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&family=Ruda:wght@400..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <div id="employe-form-div">
+      <form action="#" method="post" id="employe-form">
+        <div id="user-inputs">
+          <div id="name-div">
+            <div><label for="name">Enter Name</label></div>
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="eg: John Doe"
+                class="user-dtls"
+              />
+            </div>
+          </div>
+          <div id="prof-div">
+            <div><label for="profession">Enter Profession</label></div>
+            <div>
+              <input
+                type="text"
+                name="profession"
+                id="profession"
+                placeholder="eg: Developer"
+                class="user-dtls"
+              />
+            </div>
+          </div>
+          <div id="age-div">
+            <div><label for="age">Enter Age</label></div>
+            <div>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                min="18"
+                max="65"
+                placeholder="eg: 22"
+                class="user-dtls"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="submit-div">
+          <input type="submit" id="submit" value="Add User" />
+        </div>
+      </form>
+    </div>
+    <div id="added-emp">
+      <p class="title">Added Employees</p>
+      <div class="emp-list"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
