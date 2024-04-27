@@ -24,7 +24,6 @@ empForm.addEventListener("submit", (e) => {
   if (isEmpty) {
     renderErrorMessage(isEmpty);
   } else {
-    obj["flag"] = false;
     userObj.push(obj);
     renderSuccessMessage(isEmpty);
     renderEmp(userObj);
@@ -67,9 +66,7 @@ function renderSuccessMessage(isEmpty) {
   empFormDiv.appendChild(pTag);
 }
 function deleteUser(index) {
-  console.log(index);
   userObj = userObj.filter((item, i) => i !== parseInt(index));
-  // renderSuccessMessage(isEmpty);
   console.log(userObj);
   renderEmp(userObj);
   checkUser(userObj);
