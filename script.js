@@ -67,7 +67,6 @@ function renderSuccessMessage(isEmpty) {
 }
 function deleteUser(index) {
   userObj = userObj.filter((item, i) => i !== parseInt(index));
-  console.log(userObj);
   renderEmp(userObj);
   checkUser(userObj);
 }
