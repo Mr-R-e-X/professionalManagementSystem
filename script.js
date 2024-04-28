@@ -28,6 +28,7 @@ empForm.addEventListener("submit", (e) => {
     renderSuccessMessage(isEmpty);
     renderEmp(userObj);
     checkUser(userObj);
+    updateInputs(userDtls);
   }
 });
 
@@ -89,3 +90,8 @@ document.addEventListener("click", (e) => {
     deleteUser(idx);
   }
 });
+function updateInputs(userDtls) {
+  userDtls.forEach((item) => {
+    item.value = "";
+  });
+}
